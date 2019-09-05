@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <style>
+  @import url(//fontlibrary.org/face/effects-eighty);
+* {
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+  background-color: #243464;
+  background-image: url(https://media.giphy.com/media/JqiYS6Xvdh0IM/giphy.gif);
+  background-size: cover;
+  background-position: 50% 40%;
+}
+
+body {
+  mix-blend-mode: screen;
+}
+
+.centerer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.porthole {
+  width: 30vw;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.text {
+  font-size: 4vw;
+  font-family: "EffectsEighty";
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  color: transparent;
+  width: 100%;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.one {
+  text-shadow: 0 0.1vw 0.05vw #6858F2;
+}
+
+.two {
+  text-shadow: 0 0 0.1vw #FFFFFF;
+  animation: text-2 0.5s infinite;
+}
+
+@keyframes text-2 {
+  0% {
+    transform: scale(1) translate(0, 0) skew(0deg);
+  }
+  7% {
+    transform: scale(1) translate(0, 0) skew(0deg);
+  }
+  8% {
+    transform: scale(1.2) translate(-20px, 30px) skew(0deg);
+  }
+  11% {
+    transform: scale(1.2) translate(-20px, 30px) skew(0deg);
+  }
+  12% {
+    transform: scale(0) translate(0, 0) skew(0deg);
+  }
+  29% {
+    transform: skew(-50deg);
+  }
+  32% {
+    transform: skew(0deg);
+  }
+  41% {
+    transform: skew(0deg);
+  }
+  67% {
+    transform: scale(1) translate(0, 0) skew(0deg);
+  }
+  68% {
+    transform: scale(1.2) translate(50px, 35px) skew(0deg);
+  }
+  71% {
+    transform: scale(1.2) translate(50px, 35px) skew(0deg);
+  }
+  72% {
+    transform: scale(0) translate(0, 0) skew(0deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+  </style>
+  <body>
+    <div class="centerer">
+      <img class="porthole" src="https://media.giphy.com/media/3o85xJhackBStfkdBC/giphy.gif" />
+    </div>
+    <div class="centerer">
+      <p class="text one">Site Under Construction</p>
+    </div>
+    <div class="centerer">
+      <p class="text two">Site Under Construction</p>
+    </div>
+  </body>
+</html>
